@@ -10,7 +10,11 @@ def manual_sort(numbers_list, reverse=False):
                 numbers_list[index] = numbers_list[index - 1]
                 numbers_list[index - 1] = temp
                 swapped = True
+<<<<<<< HEAD
         n -= 1 
+=======
+        n -= 1  # Optimized for loop to avoid unnecessary comparisons
+>>>>>>> origin/main
     return numbers_list
 
 # Example usage
