@@ -222,3 +222,62 @@
 
 # print(factorial(5))
 
+# Solution 2
+
+# def factorial(n):
+#     result = 1
+
+#     while n > 0:
+#         result *= n
+#         n -= 1
+    
+#     return result
+
+# print(factorial(5))
+
+
+# 12. Palindrome Checker: Implement a function to check if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
+
+# def is_palindrome(str):
+#     return str == str[::-1]
+
+# print(is_palindrome("anas"))
+
+# 13. Anagram Checker: Create a function that takes two strings as input and returns True if they are anagrams (contain the same letters with the same frequency) and False otherwise.
+
+# def anagram_checker(str1, str2):
+#     return sorted(str1) == sorted(str2)
+
+# 14. Sentence Reversal: Create a function that takes a sentence (string) as input and returns a new string where the order of words is reversed. Ensure that punctuation marks are preserved in their original positions.
+
+# def sentence_reverse(sentence):
+#     return " ".join(reversed(sentence.split(" ")))
+
+# print(sentence_reverse("Luka, Mari? dwqdqwd"))
+
+# 15. Simple To-Do List: Implement a function that allows users to add, remove, and view items in a to-do list. It is better to use lists or dicts for this task.
+
+# 16. Combining Lists into Dictionary: Create a function that takes two lists, one for keys and one for values, and returns a dictionary where elements from the keys list are paired with elements from the values list.
+
+# def combine_lists(key_list, value_list):
+#     result = {}
+
+#     for index in range(len(key_list)):
+#         result[key_list[index]] = value_list[index]
+    
+#     return result
+
+# print(combine_lists(["a", "b", "c"], [1, 2, 3]))
+
+# 17. Dictionary Key Search: Implement a function that takes a dictionary and a key as input, and returns True if the key is present in the dictionary, False otherwise.
+
+# def search_key(dict1, key):
+#     return key in dict1
+
+# print(search_key({"a": 1, "b": 2, "c": 3}))
+
+# 18. Dictionary Value Aggregator: Write a function that takes a dictionary where the values are lists of numbers and returns a new dictionary where each key is associated with the sum of the numbers in its corresponding list.
+
+# 19. Function to Split List by Value: Design a function that takes a list and a value as input and returns two lists: one containing all elements less than the given value, and the other containing all elements greater than or equal to the given value.
+
+# 20. List Intersection Counter: Write a function that takes two lists as input and returns the count of unique elements that are common between the two lists.
