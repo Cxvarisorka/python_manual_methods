@@ -8,7 +8,7 @@ def manual_max(numbers_collection):
     return min_number
 
 
-print(manual_max([1,2,3,4,5]))
+print(manual_max([5, 4, 1, 6, 2]))
 
 
 print()

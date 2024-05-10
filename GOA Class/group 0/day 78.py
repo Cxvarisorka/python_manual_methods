@@ -175,6 +175,7 @@
 
 # print(word_counter("luka luka tskhvaradze mari mari nia lile lile lile"))
 
+
 # Solution 2
 
 # def word_counter(sentence):
@@ -218,7 +219,6 @@
 #         return 1
 #     else:
 #         return n * factorial(n - 1)
-
 
 # print(factorial(5))
 
