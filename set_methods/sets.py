@@ -9,7 +9,7 @@
 
 # Sets are written with curly brackets.
 
-fruits = {"apple", "banana", "cherry"}
+# fruits = {"apple", "banana", "cherry"}
 
 # Note: Sets are unordered, so you cannot be sure in which order the items will appear.
 
@@ -33,18 +33,18 @@ fruits = {"apple", "banana", "cherry"}
 
 # Get the length of a Set using len() function
 
-print(len(fruits))
+# print(len(fruits))
 
 # We can loop over set
 
-for fruit in fruits:
-    print(fruit)
+# for fruit in fruits:
+#     print(fruit)
 
 # we can add element to set
 
-fruits.add("Orange")
+# fruits.add("Orange")
 
-print(fruits)
+# print(fruits)
 
 # To add items from another set into the current set, use the update() method.
 
@@ -57,25 +57,25 @@ print(fruits)
 # The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
 
 
-tropical = ["pineapple", "mango", "papaya", "apple"]
+# tropical = ["pineapple", "mango", "papaya", "apple"]
 
-fruits.update(tropical)
+# fruits.update(tropical)
 
-print(fruits)
+# print(fruits)
 
 # To remove an item in a set, use the remove(), or the discard() method.
 
-fruits.remove("apple")
+# fruits.remove("apple")
 
-print(fruits)
+# print(fruits)
 
 # Note: If the item to remove does not exist, remove() will raise an error.
 
 # Remove "banana" by using the discard() method:
 
-fruits.discard("mango")
+# fruits.discard("mango")
 
-print(fruits)
+# print(fruits)
 
 # Note: If the item to remove does not exist, discard() will NOT raise an error.
 
@@ -83,7 +83,22 @@ print(fruits)
 
 # The return value of the pop() method is the removed item.
 
-removed_item = fruits.pop()
+# removed_item = fruits.pop()
 
-print(removed_item)
-print(fruits)
+# print(removed_item)
+# print(fruits)
+
+# Sets can be combined using mathematical operations.
+# The union operator | combines two sets to form a new one containing items in either.
+# The intersection operator & gets items only in both.
+# The difference operator - gets items in the first set but not in the second.
+# The symmetric difference operator ^ gets items in either set, but not both.
+
+first = {1, 2, 3, 4, 5, 6}
+second = {4, 5, 6, 7, 8, 9}
+
+print(first | second)
+print(first & second)
+print(first - second)
+print(second - first)
+print(first ^ second)

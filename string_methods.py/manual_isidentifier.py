@@ -23,11 +23,11 @@ def manual_isidentifier(s):
         return False
     
     for char in s:
-        if char != '_' and not('a' <= char.lower() <= 'z') and not('0' <= char <= '9'):
+        if  char != '_' and not('a' <= char.lower() <= 'z') and not('0' <= char <= '9'):
             return False
     
     return True
 
-print(manual_isidentifier('set'))
+print(manual_isidentifier('sum_wed'))
 
 

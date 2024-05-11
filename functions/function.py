@@ -22,12 +22,12 @@
 
 # The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name
 
-def my_function(fname):
-  print(fname + " Refsnes")
+# def my_function(fname):
+#   print(fname + " Refsnes")
 
-my_function("Emil")
-my_function("Tobias")
-my_function("Linus")
+# my_function("Emil")
+# my_function("Tobias")
+# my_function("Linus")
 
 # Arguments are often shortened to args in Python documentations.
 
@@ -39,3 +39,18 @@ my_function("Linus")
 # A parameter is the variable listed inside the parentheses in the function definition.
 
 # An argument is the value that is sent to the function when it is called.
+
+def count_up_to(n):
+    count = 1
+    while count <= n:
+        yield count
+        count += 1
+
+# Create a generator
+generator = count_up_to(5)
+
+# Iterate over the generator
+for i in generator:
+    print(i)
+
+# Output: 1 2 3 4 5
